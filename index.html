@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title></head>
+<body>
+    <script>
+
+function solveTriangle(a,b,c)
+        {
+            if(a===b && b===c){
+                return 'The triangle is EQUILATERAL.';
+            }
+            else if(a===b||b===c||a===c){
+                return 'The triangle is ISOSCELES.';
+            }
+            else{
+                return'The triangle is SCALENE.';
+            }
+        }
+
+
+        var a=parseFloat(prompt('Please enter your first number'));
+        var b=parseFloat(prompt('Please enter a second number'));
+        var c=parseFloat(prompt('Please enter a third number'));
+
+        if(isNaN(a)||isNaN(b)||isNaN(c)){
+            alert("invalid");
+        }
+        else{
+            alert(solveTriangle(a,b,c));
+        }
+
+
+
+    </script>
+</body>
+</html>
